@@ -1,0 +1,30 @@
+main {
+    background-color: var(--azulFF);
+    display: flex;
+    justify-content: space-between;
+}
+
+main div #logo {
+    margin: 30px 0 0 30px;
+    width: 30%;
+    position: fixed;
+}
+
+iframe {
+    width: 60%;
+}
+
+@media (max-width: 1031px) {
+    main div #logo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    main div #logo {
+        display: none;
+    }
+    iframe {
+        width: 100%;
+    }
+}

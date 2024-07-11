@@ -1,0 +1,48 @@
+footer {
+    background-color: var(--azul);
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+footer img {
+    width: 40px;
+}
+
+footer img:hover {
+    transition: 500ms;
+    width: 42px;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    width: 650px;
+    font-size: 1.5rem;
+}
+
+.group-footer {
+    display: flex;
+}
+
+.group-footer div {
+    margin: 0 3px;
+}
+
+@media (max-width: 768px) {
+    .copy {
+        width: 450px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 431px) {
+    footer {
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+
+    .copy {
+        width: 300px;
+    }
+}

@@ -1,0 +1,27 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Declaração de Variáveis */
+:root {
+    --azulE: #003972;
+    --azul: #4180ab;
+    --azulF: #8AB3CF;
+    --azulFF: #BDD1DE;
+    --azulFOpa: rgba(138, 179, 207, 0.71);
+    --pretoFos: #000000c0;
+    --branco: #ffffff;
+    --brancoOpa: rgba(255, 255, 255, 0.50);
+
+    --margin: 20px;
+    --padding: 15px;
+    --border-radius: 15px;
+    --alturaB: auto;
+}
+
+* {
+    font-size: 'Nunito Sans';
+}
+
+body {
+    margin: 0;
+}

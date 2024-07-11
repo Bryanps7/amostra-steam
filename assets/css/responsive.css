@@ -1,0 +1,49 @@
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-item a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-item a:hover {
+    border-bottom: #fff 2px solid;
+}
+
+/* Estilos para o botão de toggle */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-item a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}

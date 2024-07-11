@@ -1,0 +1,136 @@
+body {
+    background-color: var(--azulFF);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.group, .project, .members {
+    margin-top: var(--margin);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background-color: var(--brancoOpa);
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+main .group div {
+    margin-top: var(--margin);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background-color: var(--brancoOpa);
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+.group .title {
+    width: 40%;
+    text-align: justify;
+}
+
+.group img {
+    border-radius: var(--border-radius);
+    width: 55%;
+}
+
+.project article{
+    text-align: justify;
+}
+
+.members {
+    flex-direction: column;
+}
+
+.group-members {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+.divisor {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.group-members img {
+    cursor: pointer;
+    border-radius: 100px;
+    width: 25%;
+}
+
+
+.group-member {
+    display: none;
+    justify-content: space-around;
+}
+
+.group-member div {
+    display: flex;
+    align-items: center;
+    margin-top: var(--margin);
+    background-color: var(--brancoOpa);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+}
+
+.group-member img {
+    height: 30px;
+}
+
+.group-member a{
+    text-decoration: none;
+    color: var(--azul);
+}
+
+@media (max-width: 1001px) {
+    .group .title {
+        width: 58%;
+    }
+
+    .group img {
+        width: 40%; 
+        height: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .group {
+        flex-direction: column;
+    }
+
+    .group .title {
+        width: 100%;
+    }
+
+    .group img {
+        width: 100%;
+    }
+
+    .group-members {
+        flex-direction: column;
+    }
+
+    .divisor {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .group-member {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 431px) {
+    * {
+        font-size: 1rem;
+    }
+}
