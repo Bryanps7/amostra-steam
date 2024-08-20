@@ -25,6 +25,15 @@ h2 {
 }
 
 .section {
+    display: flex;
+}
+
+section img {
+    height: 80%;
+    border-radius: 15px;
+}
+
+.section {
     margin: 40px;
     padding: 8px;
     background-color: var(--azul);
