@@ -67,23 +67,20 @@ main .group div {
     width: 25%;
 }
 
+.group-members img:hover {
+    width: 30%;
+    transition: 500ms;
+}
+
 
 .group-member {
     display: none;
     justify-content: space-around;
 }
 
-.group-member div {
-    display: flex;
-    align-items: center;
-    margin-top: var(--margin);
-    background-color: var(--brancoOpa);
-    padding: var(--padding);
-    border-radius: var(--border-radius);
-}
-
 .group-member img {
-    height: 30px;
+    height: 100px;
+    margin-top: 20px;
 }
 
 .group-member a{
