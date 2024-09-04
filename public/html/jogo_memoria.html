@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>Formulário || ByteBrigade</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/public/logo.png" type="image/x-icon">
-    <!-- Extensões -->
+    
     <link rel="stylesheet" href="/assets/css/variaveis.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <link rel="stylesheet" href="/assets/css/footer_especial.css">
     <link rel="stylesheet" href="/assets/css/scroll.css">
-    <link rel="stylesheet" href="/assets/css/token.css">
+    <link rel="stylesheet" href="/assets/css/jogoMemoria.css">
 
+    <script src="/assets/js/jogoMemoria.js" defer></script>
     <script src="/assets/js/header.js" defer></script>
+    <title>Jogo Memória</title>
 </head>
 <body>
     <header id="header">
@@ -41,11 +42,19 @@
             </div>
         </nav>
     </header>
-    <main id="main">
-        <div>
-            <img id="logo" src="/assets/img/logop.png" alt="">
-        </div>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd60vW_WL98cDm14xb9tUvr3rqxPASr7Udf936ahHQOzHuUJg/viewform?embedded=true" width="640" height="1377" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    <nav id="main">
+        <h1>Jogo da Memória Estação Meteorológica</h1>
+        <div class="container">
+            <select id="dimensao">
+                <option value="2">2 x 2</option>
+                <option value="4">4 x 4</option>
+            </select>
+            <button onclick="jogar()">Começar</button>
+            <p class="texto">Pontuação: <span class="texto" id="pontos">0</span></p>
+        </div>        
+    </nav>
+    <main>
+        <div class="areaJogo" id="areaJogo"></div>
     </main>
     <footer>
         <div class="copy">

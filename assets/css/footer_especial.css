@@ -1,0 +1,11 @@
+footer {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+}
+
+@media (width <= 700px) {
+    footer {
+        top: 115%
+    }
+}

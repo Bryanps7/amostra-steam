@@ -69,7 +69,7 @@ main .group div {
 
 .group-members img:hover {
     width: 30%;
-    transition: 500ms;
+    transition: 800ms;
 }
 
 
