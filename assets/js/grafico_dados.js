@@ -48,7 +48,6 @@ function criarGrafico() {
 
     // Configuração global do Chart.js
     Chart.defaults.font.size = 24;
-    Chart.defaults.font.family = 'sans-serif';
     Chart.defaults.font.weight = 'bold';
     Chart.defaults.color = '#fff';
 
@@ -61,16 +60,16 @@ function criarGrafico() {
                 {
                     label: 'Umidade',
                     data: sensor1Data,
-                    borderColor: 'rgb(0, 240, 0)',
-                    backgroundColor: 'rgba(0, 240, 0, 0.8)',
+                    borderColor: 'rgb(0, 57, 114)',
+                    backgroundColor: 'rgba(0, 57, 114, 0.8)',
                     borderWidth: 3,
                     fill: false
                 },
                 {
                     label: 'Temperatura',
                     data: sensor2Data,
-                    borderColor: 'rgb(0, 0, 240)',
-                    backgroundColor: 'rgba(0, 0, 240, 0.8)',
+                    borderColor: 'rgb(65, 128, 171)',
+                    backgroundColor: 'rgba(65, 128, 171, 0.5)',
                     borderWidth: 3,
                     fill: false
                 }
