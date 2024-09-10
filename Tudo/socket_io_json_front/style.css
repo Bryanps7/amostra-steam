@@ -1,0 +1,11 @@
+body{
+    background-color: cornflowerblue;
+    color: white;
+    height: 100vh;
+}
+
+button{
+    background-color: black;
+    font-size: 1.25rem;
+    color: white;
+}
