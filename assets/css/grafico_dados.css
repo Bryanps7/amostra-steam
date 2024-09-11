@@ -14,6 +14,7 @@ main {
     margin: 10px;
     background-color: var(--azulFOpa);
     color: white;
+    flex-direction: row;
 }
 
 .sensor {
@@ -24,15 +25,50 @@ main {
     border: 1px solid white;
     border-radius: 4px;
     text-align: center;
+    width: 45%;
+}
+
+.sensores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .grafico-container {
     margin: 20px auto;  /* Centraliza a div do gráfico */
     width: 1000px;       /* Define a largura fixa da área de gráfico */
-    height: 600px;      /* Define a altura fixa da área de gráfico */
+    height: 700px;      /* Define a altura fixa da área de gráfico */
 }
 
 #grafic {
     width: 100%;       /* O canvas ocupará 100% da largura da grafico-container */
     height: 100%;      /* O canvas ocupará 100% da altura da grafico-container */
+}
+
+@media (width <= 1000px) {
+    .grafico-container {
+        width: 700px;
+    }
+}
+
+@media(width <= 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sensor {
+        width: 20%;
+    }
+
+    .grafico-container {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+@media(width <= 500px) {
+    .grafico-container {
+        width: 400px;
+        height: 200px;
+    }
 }

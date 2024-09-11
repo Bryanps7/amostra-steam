@@ -23,7 +23,7 @@ server.listen(PORT, hostname, () => {
 })
 
 // Configuração da comunicação serial
-const port = new SerialPort({ path: 'COM9', baudRate: 9600 })
+const port = new SerialPort({ path: 'COM5', baudRate: 9600 })
 const dadosLer = port.pipe(new ReadlineParser({ delimiter: '\n' }))
 
 port.on('open', () => {

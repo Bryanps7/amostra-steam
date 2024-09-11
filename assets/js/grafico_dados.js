@@ -12,8 +12,17 @@ async function fetchData() {
 
         if (data) {
             // Adiciona os dados recebidos aos arrays correspondentes
-            if (sensor1Data.length >= 30) sensor1Data.shift();
-            if (sensor2Data.length >= 30) sensor2Data.shift();
+            if(window.screen.width <= 500) {
+                if (sensor1Data.length >= 5) sensor1Data.shift();
+                if (sensor2Data.length >= 5) sensor2Data.shift();
+            }else if(window.screen.width <= 800){
+                if (sensor1Data.length >= 15) sensor1Data.shift();
+                if (sensor2Data.length >= 15) sensor2Data.shift();
+            }else {
+                if (sensor1Data.length >= 30) sensor1Data.shift();
+                if (sensor2Data.length >= 30) sensor2Data.shift();
+            }
+
 
             sensor1Data.push(data.sensor1);
             sensor2Data.push(data.sensor2);
@@ -39,7 +48,7 @@ function updateDisplay() {
 
     // Atualiza o conteúdo dos divs com os valores dos sensores
     sensor1Div.innerHTML = 'Umidade:<br>' + sensor1Data.join('<br>');
-    sensor2Div.innerHTML = 'Temperatura:<br>' + sensor2Data.join('<br>');
+    sensor2Div.innerHTML = 'Temperatura:<br>' + sensor2Data.join('°C<br>');
 }
 
 // Função para criar o gráfico
